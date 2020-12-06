@@ -27,7 +27,7 @@ public class Finance {
 
         switch (command) {
             case BEST_LOAN_RATES:
-                System.out.println("finding best loan rates ...");
+                System.out.println("Finding best loan rates ...");
                 BestLoanRates.main(arguments);
                 return;
             case SAVINGS_CALCULATOR:
@@ -52,7 +52,7 @@ public class Finance {
         boolean isValidCommand = validateCommandArguments(args);
 
         if (!isValidCommand) {
-            commandsToUsage.get(args[0]);
+            System.out.println(commandsToUsage.get(args[0]));
             return;
         }
 
